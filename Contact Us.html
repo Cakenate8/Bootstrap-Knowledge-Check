@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="navbar">
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="about.html">About</a></li>
@@ -17,22 +17,29 @@
         </nav>
     </header>
     <main>
+        <div class="row">
+            <div class="col-6">
+                <form>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter First Name">
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter Last Name here">
+                </form>
+            </div>
+        </div>
         <form>
-            <label for="name">First Name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter first name here" required>
-            <label for="name">Last name:</label>
-            <input type="text" id="name" name="name" placeholder="Enter last name here" required>
-            <br>
             <label for="user-email">Email:</label>
-            <input type="email" id="user-email" name="user-email" placeholder="Enter email here" required>
+            <input type="email" id="user-name" name="user-name" placeholder="Enter Email Here" required>
             <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
+            <input type="password" id="password" name="password" placeholder="Enter Password Here" required>
             <br>
-            <input type="checkbox" id="agree to terms" name="agree to terms" value="agree to terms" required>
-            <label for="agreeto terms">Agree to Terms</label>
-            <br>
-            <input type="submit" value="Submit">
+            <label for="agree to terms">Agree to Terms</label>
+            <input type="checkbox" id="agree to terms" name="agree to terms">
+            <input type="submit" value="Submit" class="btn-success">
         </form>
+        <table class="table table-hover">
+            
+        </table>
     </main>
 </body>
 </html>
